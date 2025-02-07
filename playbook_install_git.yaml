@@ -1,0 +1,8 @@
+---
+- name: Install docker containers for git
+  hosts:
+    - git
+  become: true
+  roles:
+    - docker_common
+    - git
